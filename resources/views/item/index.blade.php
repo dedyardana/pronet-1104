@@ -5,7 +5,7 @@
 @section('page-title','Item')
 
 @section('dashboard-content')
-    <a href="#" class="btn btn-primary">
+    <a href="item/create" class="btn btn-primary">
         Tambah
     </a>
     <table class="table" align="center">
@@ -31,5 +31,4 @@
         </tr>
         @endforeach
     </table>
-    
 @endsection

@@ -25,7 +25,7 @@ class ItemController extends Controller
      */
     public function create()
     {
-        //
+        return view('item.insert');
     }
 
     /**
@@ -36,7 +36,9 @@ class ItemController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $items=item::all();
+        item::create($request->all());
+        return redirect()->route('item.index');
     }
 
     /**
